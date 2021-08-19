@@ -1,0 +1,870 @@
+{
+  "eeprom": [
+    {
+      "Model Number": {
+        "Access": "R",
+        "Address": "0",
+        "Data Name": "Model Number",
+        "Initial": "2,110",
+        "Modbus": "40001",
+        "Range": "-",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "Model Information": {
+        "Access": "R",
+        "Address": "2",
+        "Data Name": "Model Information",
+        "Initial": "-",
+        "Modbus": "40002",
+        "Range": "-",
+        "Size(Byte)": "4",
+        "Unit": "-"
+      }
+    },
+    {
+      "Firmware Version": {
+        "Access": "R",
+        "Address": "6",
+        "Data Name": "Firmware Version",
+        "Initial": "-",
+        "Modbus": "40004 (Lo Byte)",
+        "Range": "-",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "ID": {
+        "Access": "RW",
+        "Address": "7",
+        "Data Name": "ID",
+        "Initial": "1",
+        "Modbus": "40004 (Hi Byte)",
+        "Range": "0 ~ 252 (",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Baud Rate": {
+        "Access": "RW",
+        "Address": "8",
+        "Data Name": "Baud Rate",
+        "Initial": "1",
+        "Modbus": "40005 (Lo Byte)",
+        "Range": "0 ~ 9",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Return Delay Time": {
+        "Access": "RW",
+        "Address": "9",
+        "Data Name": "Return Delay Time",
+        "Initial": "250",
+        "Modbus": "N/A",
+        "Range": "0 ~ 254",
+        "Size(Byte)": "1",
+        "Unit": "2 [\u03bcsec]"
+      }
+    },
+    {
+      "Drive Mode": {
+        "Access": "RW",
+        "Address": "10",
+        "Data Name": "Drive Mode",
+        "Initial": "0",
+        "Modbus": "40006 (Lo Byte)",
+        "Range": "0 ~ 1",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Operating Mode": {
+        "Access": "RW",
+        "Address": "11",
+        "Data Name": "Operating Mode",
+        "Initial": "3",
+        "Modbus": "40006 (Hi Byte)",
+        "Range": "0, 1, 3, 4, 16",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Secondary ID": {
+        "Access": "RW",
+        "Address": "12",
+        "Data Name": "Secondary ID",
+        "Initial": "255",
+        "Modbus": "N/A",
+        "Range": "0 ~ 255",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Protocol Type": {
+        "Access": "RW",
+        "Address": "13",
+        "Data Name": "Protocol Type",
+        "Initial": "2",
+        "Modbus": "40007 (Hi Byte)",
+        "Range": "2, 10",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Homing Offset": {
+        "Access": "RW",
+        "Address": "20",
+        "Data Name": "Homing Offset",
+        "Initial": "0",
+        "Modbus": "40011",
+        "Range": "-2,147,483,648 ~",
+        "Size(Byte)": "4",
+        "Unit": "1 [pulse]"
+      }
+    },
+    {
+      "Moving Threshold": {
+        "Access": "RW",
+        "Address": "24",
+        "Data Name": "Moving Threshold",
+        "Initial": "20",
+        "Modbus": "40013",
+        "Range": "0 ~ 2,840",
+        "Size(Byte)": "4",
+        "Unit": "0.01 [rev/min]"
+      }
+    },
+    {
+      "Temperature Limit": {
+        "Access": "RW",
+        "Address": "31",
+        "Data Name": "Temperature Limit",
+        "Initial": "80",
+        "Modbus": "40016 (Hi Byte)",
+        "Range": "0 ~ 100",
+        "Size(Byte)": "1",
+        "Unit": "1 [\u00b0C]"
+      }
+    },
+    {
+      "Max Voltage Limit": {
+        "Access": "RW",
+        "Address": "32",
+        "Data Name": "Max Voltage Limit",
+        "Initial": "350",
+        "Modbus": "40017",
+        "Range": "150 ~ 350",
+        "Size(Byte)": "2",
+        "Unit": "0.1 [V]"
+      }
+    },
+    {
+      "Min Voltage Limit": {
+        "Access": "RW",
+        "Address": "34",
+        "Data Name": "Min Voltage Limit",
+        "Initial": "150",
+        "Modbus": "40018",
+        "Range": "150 ~ 350",
+        "Size(Byte)": "2",
+        "Unit": "0.1 [V]"
+      }
+    },
+    {
+      "PWM Limit": {
+        "Access": "RW",
+        "Address": "36",
+        "Data Name": "PWM Limit",
+        "Initial": "2,009",
+        "Modbus": "40019",
+        "Range": "0 ~ 2,009",
+        "Size(Byte)": "2",
+        "Unit": "0.498 [%]"
+      }
+    },
+    {
+      "Current Limit": {
+        "Access": "RW",
+        "Address": "38",
+        "Data Name": "Current Limit",
+        "Initial": "4,470",
+        "Modbus": "40020",
+        "Range": "0 ~ 4,470",
+        "Size(Byte)": "2",
+        "Unit": "1 [mA]"
+      }
+    },
+    {
+      "Acceleration Limit": {
+        "Access": "RW",
+        "Address": "40",
+        "Data Name": "Acceleration Limit",
+        "Initial": "11,037",
+        "Modbus": "40021",
+        "Range": "0 ~ 4,414,976",
+        "Size(Byte)": "4",
+        "Unit": "1 [rev/min"
+      }
+    },
+    {
+      "Velocity Limit": {
+        "Access": "RW",
+        "Address": "44",
+        "Data Name": "Velocity Limit",
+        "Initial": "2,840",
+        "Modbus": "40023",
+        "Range": "0 ~ 2,840",
+        "Size(Byte)": "4",
+        "Unit": "0.01 [rev/min]"
+      }
+    },
+    {
+      "Max Position Limit": {
+        "Access": "RW",
+        "Address": "48",
+        "Data Name": "Max Position Limit",
+        "Initial": "251,173",
+        "Modbus": "40025",
+        "Range": "-251,417 ~",
+        "Size(Byte)": "4",
+        "Unit": "1 [pulse]"
+      }
+    },
+    {
+      "Min Position Limit": {
+        "Access": "RW",
+        "Address": "52",
+        "Data Name": "Min Position Limit",
+        "Initial": "-251,173",
+        "Modbus": "40027",
+        "Range": "-251,417 ~",
+        "Size(Byte)": "4",
+        "Unit": "1 [pulse]"
+      }
+    },
+    {
+      "External Port Mode 1": {
+        "Access": "RW",
+        "Address": "56",
+        "Data Name": "External Port Mode 1",
+        "Initial": "3",
+        "Modbus": "40029 (Lo Byte)",
+        "Range": "0 ~ 3",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "External Port Mode 2": {
+        "Access": "RW",
+        "Address": "57",
+        "Data Name": "External Port Mode 2",
+        "Initial": "3",
+        "Modbus": "40029 (Hi Byte)",
+        "Range": "0 ~ 3",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "External Port Mode 3": {
+        "Access": "RW",
+        "Address": "58",
+        "Data Name": "External Port Mode 3",
+        "Initial": "3",
+        "Modbus": "40030 (Lo Byte)",
+        "Range": "0 ~ 3",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "External Port Mode 4": {
+        "Access": "RW",
+        "Address": "59",
+        "Data Name": "External Port Mode 4",
+        "Initial": "3",
+        "Modbus": "40030 (Hi Byte)",
+        "Range": "0 ~ 3",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Shutdown": {
+        "Access": "RW",
+        "Address": "63",
+        "Data Name": "Shutdown",
+        "Initial": "58",
+        "Modbus": "40032 (Hi Byte)",
+        "Range": "0 ~ 63",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Indirect Address 1": {
+        "Access": "RW",
+        "Address": "168",
+        "Data Name": "Indirect Address 1",
+        "Initial": "634",
+        "Modbus": "N/A",
+        "Range": "512 ~ 1,023",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "Indirect Address 2": {
+        "Access": "RW",
+        "Address": "170",
+        "Data Name": "Indirect Address 2",
+        "Initial": "635",
+        "Modbus": "N/A",
+        "Range": "512 ~ 1,023",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "Indirect Address 3": {
+        "Access": "RW",
+        "Address": "172",
+        "Data Name": "Indirect Address 3",
+        "Initial": "636",
+        "Modbus": "N/A",
+        "Range": "512 ~ 1,023",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "\u2026": {
+        "Access": "\u2026",
+        "Address": "\u2026",
+        "Data Name": "\u2026",
+        "Initial": "\u2026",
+        "Modbus": "\u2026",
+        "Range": "\u2026",
+        "Size(Byte)": "\u2026",
+        "Unit": "\u2026"
+      }
+    },
+    {
+      "Indirect Address 128": {
+        "Access": "RW",
+        "Address": "422",
+        "Data Name": "Indirect Address 128",
+        "Initial": "761",
+        "Modbus": "N/A",
+        "Range": "512 ~ 1,023",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    }
+  ],
+  "ram": [
+    {
+      "Torque Enable": {
+        "Access": "RW",
+        "Address": "512",
+        "Data Name": "Torque Enable",
+        "Initial": "0",
+        "Modbus": "40257 (Lo Byte)",
+        "Range": "0 ~ 1",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "LED Red": {
+        "Access": "RW",
+        "Address": "513",
+        "Data Name": "LED Red",
+        "Initial": "0",
+        "Modbus": "40257 (Hi Byte)",
+        "Range": "0 ~ 255",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "LED Green": {
+        "Access": "RW",
+        "Address": "514",
+        "Data Name": "LED Green",
+        "Initial": "0",
+        "Modbus": "40258 (Lo Byte)",
+        "Range": "0 ~ 255",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "LED Blue": {
+        "Access": "RW",
+        "Address": "515",
+        "Data Name": "LED Blue",
+        "Initial": "0",
+        "Modbus": "40258 (Hi Byte)",
+        "Range": "0 ~ 255",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Status Return Level": {
+        "Access": "RW",
+        "Address": "516",
+        "Data Name": "Status Return Level",
+        "Initial": "2",
+        "Modbus": "N/A",
+        "Range": "0 ~ 2",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Registered Instruction": {
+        "Access": "R",
+        "Address": "517",
+        "Data Name": "Registered Instruction",
+        "Initial": "0",
+        "Modbus": "N/A",
+        "Range": "-",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Hardware Error Status": {
+        "Access": "R",
+        "Address": "518",
+        "Data Name": "Hardware Error Status",
+        "Initial": "0",
+        "Modbus": "40260 (Lo Byte)",
+        "Range": "-",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Velocity I Gain": {
+        "Access": "RW",
+        "Address": "524",
+        "Data Name": "Velocity I Gain",
+        "Initial": "408",
+        "Modbus": "40263",
+        "Range": "0 ~ 32,767",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "Velocity P Gain": {
+        "Access": "RW",
+        "Address": "526",
+        "Data Name": "Velocity P Gain",
+        "Initial": "1137",
+        "Modbus": "40264",
+        "Range": "0 ~ 32,767",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "Position D Gain": {
+        "Access": "RW",
+        "Address": "528",
+        "Data Name": "Position D Gain",
+        "Initial": "0",
+        "Modbus": "40265",
+        "Range": "0 ~ 32,767",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "Position I Gain": {
+        "Access": "RW",
+        "Address": "530",
+        "Data Name": "Position I Gain",
+        "Initial": "0",
+        "Modbus": "40266",
+        "Range": "0 ~ 32,767",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "Position P Gain": {
+        "Access": "RW",
+        "Address": "532",
+        "Data Name": "Position P Gain",
+        "Initial": "502",
+        "Modbus": "40267",
+        "Range": "0 ~ 32,767",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "Feedforward 2nd Gain": {
+        "Access": "RW",
+        "Address": "536",
+        "Data Name": "Feedforward 2nd Gain",
+        "Initial": "0",
+        "Modbus": "40269",
+        "Range": "0 ~ 32,767",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "Feedforward 1st Gain": {
+        "Access": "RW",
+        "Address": "538",
+        "Data Name": "Feedforward 1st Gain",
+        "Initial": "0",
+        "Modbus": "40270",
+        "Range": "0 ~ 32,767",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "Bus Watchdog": {
+        "Access": "RW",
+        "Address": "546",
+        "Data Name": "Bus Watchdog",
+        "Initial": "0",
+        "Modbus": "40274 (Lo Byte)",
+        "Range": "0 ~ 127",
+        "Size(Byte)": "1",
+        "Unit": "20 [msec]"
+      }
+    },
+    {
+      "Goal PWM": {
+        "Access": "RW",
+        "Address": "548",
+        "Data Name": "Goal PWM",
+        "Initial": "-",
+        "Modbus": "40275",
+        "Range": "-PWM Limit(36) ~",
+        "Size(Byte)": "2",
+        "Unit": "0.498 [%]"
+      }
+    },
+    {
+      "Goal Current": {
+        "Access": "RW",
+        "Address": "550",
+        "Data Name": "Goal Current",
+        "Initial": "-",
+        "Modbus": "40276",
+        "Range": "-Current Limit(38) ~",
+        "Size(Byte)": "2",
+        "Unit": "1 [mA]"
+      }
+    },
+    {
+      "Goal Velocity": {
+        "Access": "RW",
+        "Address": "552",
+        "Data Name": "Goal Velocity",
+        "Initial": "-",
+        "Modbus": "40277",
+        "Range": "-Velocity Limit(44) ~",
+        "Size(Byte)": "4",
+        "Unit": "0.01 [rev/min]"
+      }
+    },
+    {
+      "Profile Acceleration": {
+        "Access": "RW",
+        "Address": "556",
+        "Data Name": "Profile Acceleration",
+        "Initial": "-",
+        "Modbus": "40279",
+        "Range": "0 ~",
+        "Size(Byte)": "4",
+        "Unit": "1 [rev/min"
+      }
+    },
+    {
+      "Profile Velocity": {
+        "Access": "RW",
+        "Address": "560",
+        "Data Name": "Profile Velocity",
+        "Initial": "-",
+        "Modbus": "40281",
+        "Range": "0 ~",
+        "Size(Byte)": "4",
+        "Unit": "0.01 [rev/min]"
+      }
+    },
+    {
+      "Goal Position": {
+        "Access": "RW",
+        "Address": "564",
+        "Data Name": "Goal Position",
+        "Initial": "-",
+        "Modbus": "40283",
+        "Range": "Min Position Limit(52) ~",
+        "Size(Byte)": "4",
+        "Unit": "1[pulse]"
+      }
+    },
+    {
+      "Realtime Tick": {
+        "Access": "R",
+        "Address": "568",
+        "Data Name": "Realtime Tick",
+        "Initial": "-",
+        "Modbus": "40285",
+        "Range": "0 ~ 32,767",
+        "Size(Byte)": "2",
+        "Unit": "1 [msec]"
+      }
+    },
+    {
+      "Moving": {
+        "Access": "R",
+        "Address": "570",
+        "Data Name": "Moving",
+        "Initial": "-",
+        "Modbus": "40286 (Lo Byte)",
+        "Range": "-",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Moving Status": {
+        "Access": "R",
+        "Address": "571",
+        "Data Name": "Moving Status",
+        "Initial": "-",
+        "Modbus": "40286 (Hi Byte)",
+        "Range": "-",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Present PWM": {
+        "Access": "R",
+        "Address": "572",
+        "Data Name": "Present PWM",
+        "Initial": "-",
+        "Modbus": "40287",
+        "Range": "-",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "Present Current": {
+        "Access": "R",
+        "Address": "574",
+        "Data Name": "Present Current",
+        "Initial": "-",
+        "Modbus": "40288",
+        "Range": "-",
+        "Size(Byte)": "2",
+        "Unit": "1 [mA]"
+      }
+    },
+    {
+      "Present Velocity": {
+        "Access": "R",
+        "Address": "576",
+        "Data Name": "Present Velocity",
+        "Initial": "-",
+        "Modbus": "40289",
+        "Range": "-",
+        "Size(Byte)": "4",
+        "Unit": "0.01 [rev/min]"
+      }
+    },
+    {
+      "Present Position": {
+        "Access": "R",
+        "Address": "580",
+        "Data Name": "Present Position",
+        "Initial": "-",
+        "Modbus": "40291",
+        "Range": "-",
+        "Size(Byte)": "4",
+        "Unit": "1 [pulse]"
+      }
+    },
+    {
+      "Velocity Trajectory": {
+        "Access": "R",
+        "Address": "584",
+        "Data Name": "Velocity Trajectory",
+        "Initial": "-",
+        "Modbus": "40293",
+        "Range": "-",
+        "Size(Byte)": "4",
+        "Unit": "0.01 [rev/min]"
+      }
+    },
+    {
+      "Position Trajectory": {
+        "Access": "R",
+        "Address": "588",
+        "Data Name": "Position Trajectory",
+        "Initial": "-",
+        "Modbus": "40295",
+        "Range": "-",
+        "Size(Byte)": "4",
+        "Unit": "1 [pulse]"
+      }
+    },
+    {
+      "Present Input Voltage": {
+        "Access": "R",
+        "Address": "592",
+        "Data Name": "Present Input Voltage",
+        "Initial": "-",
+        "Modbus": "40297",
+        "Range": "-",
+        "Size(Byte)": "2",
+        "Unit": "0.1 [V]"
+      }
+    },
+    {
+      "Present Temperature": {
+        "Access": "R",
+        "Address": "594",
+        "Data Name": "Present Temperature",
+        "Initial": "-",
+        "Modbus": "40298 (Lo Byte)",
+        "Range": "-",
+        "Size(Byte)": "1",
+        "Unit": "1 [\u00b0C]"
+      }
+    },
+    {
+      "External Port Data 1": {
+        "Access": "R/RW",
+        "Address": "600",
+        "Data Name": "External Port Data 1",
+        "Initial": "0",
+        "Modbus": "40301",
+        "Range": "0 ~ 4,095",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "External Port Data 2": {
+        "Access": "R/RW",
+        "Address": "602",
+        "Data Name": "External Port Data 2",
+        "Initial": "0",
+        "Modbus": "40302",
+        "Range": "0 ~ 4,095",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "External Port Data 3": {
+        "Access": "R/RW",
+        "Address": "604",
+        "Data Name": "External Port Data 3",
+        "Initial": "0",
+        "Modbus": "40303",
+        "Range": "0 ~ 4,095",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "External Port Data 4": {
+        "Access": "R/RW",
+        "Address": "606",
+        "Data Name": "External Port Data 4",
+        "Initial": "0",
+        "Modbus": "40304",
+        "Range": "0 ~ 4,095",
+        "Size(Byte)": "2",
+        "Unit": "-"
+      }
+    },
+    {
+      "Indirect Data 1": {
+        "Access": "RW",
+        "Address": "634",
+        "Data Name": "Indirect Data 1",
+        "Initial": "0",
+        "Modbus": "N/A",
+        "Range": "0 ~ 255",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Indirect Data 2": {
+        "Access": "RW",
+        "Address": "635",
+        "Data Name": "Indirect Data 2",
+        "Initial": "0",
+        "Modbus": "N/A",
+        "Range": "0 ~ 255",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Indirect Data 3": {
+        "Access": "RW",
+        "Address": "636",
+        "Data Name": "Indirect Data 3",
+        "Initial": "0",
+        "Modbus": "N/A",
+        "Range": "0 ~ 255",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "\u2026": {
+        "Access": "\u2026",
+        "Address": "\u2026",
+        "Data Name": "\u2026",
+        "Initial": "\u2026",
+        "Modbus": "\u00a0",
+        "Range": "\u2026",
+        "Size(Byte)": "\u2026",
+        "Unit": "\u2026"
+      }
+    },
+    {
+      "Indirect Data 128": {
+        "Access": "RW",
+        "Address": "761",
+        "Data Name": "Indirect Data 128",
+        "Initial": "0",
+        "Modbus": "N/A",
+        "Range": "0 ~ 255",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    }
+  ]
+}

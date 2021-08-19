@@ -1,0 +1,326 @@
+{
+  "eeprom": [
+    {
+      "Model Number": {
+        "Access": "R",
+        "Address": "0",
+        "Data Name": "Model Number",
+        "Description": "Model Number",
+        "Initial": "24",
+        "Size(Byte)": "2"
+      }
+    },
+    {
+      "Firmware Version": {
+        "Access": "R",
+        "Address": "2",
+        "Data Name": "Firmware Version",
+        "Description": "Firmware Version",
+        "Initial": "-",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "ID": {
+        "Access": "RW",
+        "Address": "3",
+        "Data Name": "ID",
+        "Description": "DYNAMIXEL ID",
+        "Initial": "1",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "Baud Rate": {
+        "Access": "RW",
+        "Address": "4",
+        "Data Name": "Baud Rate",
+        "Description": "Communication Speed",
+        "Initial": "34",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "Return Delay Time": {
+        "Access": "RW",
+        "Address": "5",
+        "Data Name": "Return Delay Time",
+        "Description": "Response Delay Time",
+        "Initial": "250",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "CW Angle Limit": {
+        "Access": "RW",
+        "Address": "6",
+        "Data Name": "CW Angle Limit",
+        "Description": "Clockwise Angle Limit",
+        "Initial": "0",
+        "Size(Byte)": "2"
+      }
+    },
+    {
+      "CCW Angle Limit": {
+        "Access": "RW",
+        "Address": "8",
+        "Data Name": "CCW Angle Limit",
+        "Description": "Counter-Clockwise Angle Limit",
+        "Initial": "1023",
+        "Size(Byte)": "2"
+      }
+    },
+    {
+      "Temperature Limit": {
+        "Access": "RW",
+        "Address": "11",
+        "Data Name": "Temperature Limit",
+        "Description": "Maximum Internal Temperature Limit",
+        "Initial": "80",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "Min Voltage Limit": {
+        "Access": "RW",
+        "Address": "12",
+        "Data Name": "Min Voltage Limit",
+        "Description": "Minimum Input Voltage Limit",
+        "Initial": "60",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "Max Voltage Limit": {
+        "Access": "RW",
+        "Address": "13",
+        "Data Name": "Max Voltage Limit",
+        "Description": "Maximum Input Voltage Limit",
+        "Initial": "190",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "Max Torque": {
+        "Access": "RW",
+        "Address": "14",
+        "Data Name": "Max Torque",
+        "Description": "Maximun Torque",
+        "Initial": "1023",
+        "Size(Byte)": "2"
+      }
+    },
+    {
+      "Status Return Level": {
+        "Access": "RW",
+        "Address": "16",
+        "Data Name": "Status Return Level",
+        "Description": "Select Types of Status Return",
+        "Initial": "2",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "Alarm LED": {
+        "Access": "RW",
+        "Address": "17",
+        "Data Name": "Alarm LED",
+        "Description": "LED for Alarm",
+        "Initial": "36",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "Shutdown": {
+        "Access": "RW",
+        "Address": "18",
+        "Data Name": "Shutdown",
+        "Description": "Shutdown Error Information",
+        "Initial": "36",
+        "Size(Byte)": "1"
+      }
+    }
+  ],
+  "ram": [
+    {
+      "Torque Enable": {
+        "Access": "RW",
+        "Address": "24",
+        "Data Name": "Torque Enable",
+        "Description": "Motor Torque On/Off",
+        "Initial": "0",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "LED": {
+        "Access": "RW",
+        "Address": "25",
+        "Data Name": "LED",
+        "Description": "Status LED On/Off",
+        "Initial": "0",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "CW Compliance Margin": {
+        "Access": "RW",
+        "Address": "26",
+        "Data Name": "CW Compliance Margin",
+        "Description": "CW Compliance Margin",
+        "Initial": "1",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "CCW Compliance Margin": {
+        "Access": "RW",
+        "Address": "27",
+        "Data Name": "CCW Compliance Margin",
+        "Description": "CCW Compliance Margin",
+        "Initial": "1",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "CW Compliance Slope": {
+        "Access": "RW",
+        "Address": "28",
+        "Data Name": "CW Compliance Slope",
+        "Description": "CW Compliance Slope",
+        "Initial": "32",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "CCW Compliance Slope": {
+        "Access": "RW",
+        "Address": "29",
+        "Data Name": "CCW Compliance Slope",
+        "Description": "CCW Compliance Slope",
+        "Initial": "32",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "Goal Position": {
+        "Access": "RW",
+        "Address": "30",
+        "Data Name": "Goal Position",
+        "Description": "Target Position",
+        "Initial": "-",
+        "Size(Byte)": "2"
+      }
+    },
+    {
+      "Moving Speed": {
+        "Access": "RW",
+        "Address": "32",
+        "Data Name": "Moving Speed",
+        "Description": "Moving Speed",
+        "Initial": "-",
+        "Size(Byte)": "2"
+      }
+    },
+    {
+      "Torque Limit": {
+        "Access": "RW",
+        "Address": "34",
+        "Data Name": "Torque Limit",
+        "Description": "Torque Limit",
+        "Initial": "Max Torque",
+        "Size(Byte)": "2"
+      }
+    },
+    {
+      "Present Position": {
+        "Access": "R",
+        "Address": "36",
+        "Data Name": "Present Position",
+        "Description": "Present Position",
+        "Initial": "-",
+        "Size(Byte)": "2"
+      }
+    },
+    {
+      "Present Speed": {
+        "Access": "R",
+        "Address": "38",
+        "Data Name": "Present Speed",
+        "Description": "Present Speed",
+        "Initial": "-",
+        "Size(Byte)": "2"
+      }
+    },
+    {
+      "Present Load": {
+        "Access": "R",
+        "Address": "40",
+        "Data Name": "Present Load",
+        "Description": "Present Load",
+        "Initial": "-",
+        "Size(Byte)": "2"
+      }
+    },
+    {
+      "Present Voltage": {
+        "Access": "R",
+        "Address": "42",
+        "Data Name": "Present Voltage",
+        "Description": "Present Voltage",
+        "Initial": "-",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "Present Temperature": {
+        "Access": "R",
+        "Address": "43",
+        "Data Name": "Present Temperature",
+        "Description": "Present Temperature",
+        "Initial": "-",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "Registered": {
+        "Access": "R",
+        "Address": "44",
+        "Data Name": "Registered",
+        "Description": "If Instruction is registered",
+        "Initial": "0",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "Moving": {
+        "Access": "R",
+        "Address": "46",
+        "Data Name": "Moving",
+        "Description": "Movement Status",
+        "Initial": "0",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "Lock": {
+        "Access": "RW",
+        "Address": "47",
+        "Data Name": "Lock",
+        "Description": "Locking EEPROM",
+        "Initial": "0",
+        "Size(Byte)": "1"
+      }
+    },
+    {
+      "Punch": {
+        "Access": "RW",
+        "Address": "48",
+        "Data Name": "Punch",
+        "Description": "Minimum Current Threshold",
+        "Initial": "32",
+        "Size(Byte)": "2"
+      }
+    }
+  ]
+}
