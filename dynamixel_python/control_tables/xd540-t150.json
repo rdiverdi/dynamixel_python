@@ -5,7 +5,7 @@
         "Access": "R",
         "Address": "0",
         "Data Name": "Model Number",
-        "Initial": "1,100",
+        "Initial": "1,111",
         "Range": "-",
         "Size(Byte)": "2",
         "Unit": "-"
@@ -192,7 +192,7 @@
         "Access": "RW",
         "Address": "44",
         "Data Name": "Velocity Limit",
-        "Initial": "167",
+        "Initial": "300",
         "Range": "0 ~ 1023",
         "Size(Byte)": "4",
         "Unit": "0.229 [rev/min]"

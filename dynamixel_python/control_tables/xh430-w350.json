@@ -221,6 +221,17 @@
       }
     },
     {
+      "Startup Configuration": {
+        "Access": "RW",
+        "Address": "60",
+        "Data Name": "Startup Configuration",
+        "Initial": "0",
+        "Range": "3",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
       "Shutdown": {
         "Access": "RW",
         "Address": "63",
@@ -561,6 +572,17 @@
         "Range": "-",
         "Size(Byte)": "1",
         "Unit": "1 [\u00b0C]"
+      }
+    },
+    {
+      "Backup Ready": {
+        "Access": "R",
+        "Address": "147",
+        "Data Name": "Backup Ready",
+        "Initial": "-",
+        "Range": "0 ~ 1",
+        "Size(Byte)": "1",
+        "Unit": "-"
       }
     },
     {

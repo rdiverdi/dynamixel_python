@@ -79,7 +79,7 @@
         "Data Name": "Drive Mode",
         "Initial": "0",
         "Modbus": "40006 (Lo Byte)",
-        "Range": "0 ~ 1",
+        "Range": "0 ~ 13",
         "Size(Byte)": "1",
         "Unit": "-"
       }
@@ -189,7 +189,7 @@
         "Modbus": "40019",
         "Range": "0 ~ 2,009",
         "Size(Byte)": "2",
-        "Unit": "0.498 [%]"
+        "Unit": "0.0498 [%]"
       }
     },
     {
@@ -209,7 +209,7 @@
         "Access": "RW",
         "Address": "40",
         "Data Name": "Acceleration Limit",
-        "Initial": "1,0867",
+        "Initial": "4,346,756",
         "Modbus": "40021",
         "Range": "0 ~ 4,346,756",
         "Size(Byte)": "4",
@@ -296,6 +296,18 @@
         "Initial": "3",
         "Modbus": "40030 (Hi Byte)",
         "Range": "0 ~ 3",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Startup Configuration": {
+        "Access": "RW",
+        "Address": "60",
+        "Data Name": "Startup Configuration",
+        "Initial": "0",
+        "Modbus": "40031 (Lo Byte)",
+        "Range": "3",
         "Size(Byte)": "1",
         "Unit": "-"
       }
@@ -563,7 +575,7 @@
         "Modbus": "40275",
         "Range": "-PWM Limit(36) ~",
         "Size(Byte)": "2",
-        "Unit": "0.498 [%]"
+        "Unit": "0.0498 [%]"
       }
     },
     {
@@ -671,7 +683,7 @@
         "Modbus": "40287",
         "Range": "-",
         "Size(Byte)": "2",
-        "Unit": "-"
+        "Unit": "0.0498 [%]"
       }
     },
     {
@@ -862,6 +874,18 @@
         "Initial": "0",
         "Modbus": "N/A",
         "Range": "0 ~ 255",
+        "Size(Byte)": "1",
+        "Unit": "-"
+      }
+    },
+    {
+      "Backup Ready": {
+        "Access": "R",
+        "Address": "878",
+        "Data Name": "Backup Ready",
+        "Initial": "-",
+        "Modbus": "N/A",
+        "Range": "0 ~ 1",
         "Size(Byte)": "1",
         "Unit": "-"
       }

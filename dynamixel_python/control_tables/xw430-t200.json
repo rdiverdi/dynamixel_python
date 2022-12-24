@@ -2,277 +2,244 @@
   "eeprom": [
     {
       "Model Number": {
-        "Access": "R",
+        "Access": "1,280",
         "Address": "0",
         "Data Name": "Model Number",
-        "Initial": "1,100",
+        "Initial": "-",
         "Range": "-",
         "Size(Byte)": "2",
-        "Unit": "-"
+        "Unit": "\u00a0"
       }
     },
     {
       "Model Information": {
-        "Access": "R",
+        "Access": "-",
         "Address": "2",
         "Data Name": "Model Information",
         "Initial": "-",
         "Range": "-",
         "Size(Byte)": "4",
-        "Unit": "-"
+        "Unit": "\u00a0"
       }
     },
     {
       "Firmware Version": {
-        "Access": "R",
+        "Access": "-",
         "Address": "6",
         "Data Name": "Firmware Version",
         "Initial": "-",
         "Range": "-",
         "Size(Byte)": "1",
-        "Unit": "-"
+        "Unit": "\u00a0"
       }
     },
     {
       "ID": {
-        "Access": "RW",
+        "Access": "1",
         "Address": "7",
         "Data Name": "ID",
-        "Initial": "1",
-        "Range": "0 ~ 252",
+        "Initial": "0 ~ 252",
+        "Range": "-",
         "Size(Byte)": "1",
-        "Unit": "-"
+        "Unit": "\u00a0"
       }
     },
     {
       "Baud Rate": {
-        "Access": "RW",
+        "Access": "1",
         "Address": "8",
         "Data Name": "Baud Rate",
-        "Initial": "1",
-        "Range": "0 ~ 7",
+        "Initial": "0 ~ 7",
+        "Range": "-",
         "Size(Byte)": "1",
-        "Unit": "-"
+        "Unit": "\u00a0"
       }
     },
     {
       "Return Delay Time": {
-        "Access": "RW",
+        "Access": "250",
         "Address": "9",
         "Data Name": "Return Delay Time",
-        "Initial": "250",
-        "Range": "0 ~ 254",
+        "Initial": "0 ~ 254",
+        "Range": "2 [\u03bcsec]",
         "Size(Byte)": "1",
-        "Unit": "2 [\u03bcsec]"
+        "Unit": "\u00a0"
       }
     },
     {
       "Drive Mode": {
-        "Access": "RW",
+        "Access": "0",
         "Address": "10",
         "Data Name": "Drive Mode",
-        "Initial": "0",
-        "Range": "0 ~ 5",
+        "Initial": "0 ~ 13",
+        "Range": "-",
         "Size(Byte)": "1",
-        "Unit": "-"
+        "Unit": "\u00a0"
       }
     },
     {
       "Operating Mode": {
-        "Access": "RW",
+        "Access": "3",
         "Address": "11",
         "Data Name": "Operating Mode",
-        "Initial": "3",
-        "Range": "0 ~ 16",
+        "Initial": "0 ~ 16",
+        "Range": "-",
         "Size(Byte)": "1",
-        "Unit": "-"
+        "Unit": "\u00a0"
       }
     },
     {
       "Secondary(Shadow) ID": {
-        "Access": "RW",
+        "Access": "255",
         "Address": "12",
         "Data Name": "Secondary(Shadow) ID",
-        "Initial": "255",
-        "Range": "0 ~ 252",
+        "Initial": "0 ~ 252",
+        "Range": "-",
         "Size(Byte)": "1",
-        "Unit": "-"
+        "Unit": "\u00a0"
       }
     },
     {
       "Protocol Type": {
-        "Access": "RW",
+        "Access": "1",
         "Address": "13",
         "Data Name": "Protocol Type",
-        "Initial": "2",
-        "Range": "1 ~ 2",
+        "Initial": "1 ~ 2",
+        "Range": "-",
         "Size(Byte)": "1",
-        "Unit": "-"
+        "Unit": "\u00a0"
       }
     },
     {
       "Homing Offset": {
-        "Access": "RW",
+        "Access": "0",
         "Address": "20",
         "Data Name": "Homing Offset",
-        "Initial": "0",
-        "Range": "-1,044,479 ~ ",
+        "Initial": "-1,044,479 ~",
+        "Range": "1 [pulse]",
         "Size(Byte)": "4",
-        "Unit": "1 [pulse]"
+        "Unit": "\u00a0"
       }
     },
     {
       "Moving Threshold": {
-        "Access": "RW",
+        "Access": "10",
         "Address": "24",
         "Data Name": "Moving Threshold",
-        "Initial": "10",
-        "Range": "0 ~ 1,023",
+        "Initial": "0 ~ 1,023",
+        "Range": "0.229 [rev/min]",
         "Size(Byte)": "4",
-        "Unit": "0.229 [rev/min]"
+        "Unit": "\u00a0"
       }
     },
     {
       "Temperature Limit": {
-        "Access": "RW",
+        "Access": "80",
         "Address": "31",
         "Data Name": "Temperature Limit",
-        "Initial": "80",
-        "Range": "0 ~ 100",
+        "Initial": "0 ~ 100",
+        "Range": "1 [\u2103]",
         "Size(Byte)": "1",
-        "Unit": "1 [\u00b0C]"
+        "Unit": "\u00a0"
       }
     },
     {
       "Max Voltage Limit": {
-        "Access": "RW",
+        "Access": "160",
         "Address": "32",
         "Data Name": "Max Voltage Limit",
-        "Initial": "160",
-        "Range": "95 ~ 160",
+        "Initial": "95 ~ 160",
+        "Range": "0.1 [V]",
         "Size(Byte)": "2",
-        "Unit": "0.1 [V]"
+        "Unit": "\u00a0"
       }
     },
     {
       "Min Voltage Limit": {
-        "Access": "RW",
+        "Access": "95",
         "Address": "34",
         "Data Name": "Min Voltage Limit",
-        "Initial": "95",
-        "Range": "95 ~ 160",
+        "Initial": "95 ~ 160",
+        "Range": "0.1 [V]",
         "Size(Byte)": "2",
-        "Unit": "0.1 [V]"
+        "Unit": "\u00a0"
       }
     },
     {
       "PWM Limit": {
-        "Access": "RW",
+        "Access": "885",
         "Address": "36",
         "Data Name": "PWM Limit",
-        "Initial": "885",
-        "Range": "0 ~ 885",
+        "Initial": "0 ~ 885",
+        "Range": "0.113 [%]",
         "Size(Byte)": "2",
-        "Unit": "0.113 [%]"
+        "Unit": "\u00a0"
       }
     },
     {
       "Current Limit": {
-        "Access": "RW",
+        "Access": "2,047",
         "Address": "38",
         "Data Name": "Current Limit",
-        "Initial": "2,047",
-        "Range": "0 ~ 2,047",
+        "Initial": "0 ~ 2,047",
+        "Range": "2.69 [mA]",
         "Size(Byte)": "2",
-        "Unit": "2.69 [mA]"
+        "Unit": "\u00a0"
       }
     },
     {
       "Velocity Limit": {
-        "Access": "RW",
+        "Access": "235",
         "Address": "44",
         "Data Name": "Velocity Limit",
-        "Initial": "167",
-        "Range": "0 ~ 1023",
+        "Initial": "0 ~ 1,023",
+        "Range": "0.229 [rev/min]",
         "Size(Byte)": "4",
-        "Unit": "0.229 [rev/min]"
+        "Unit": "\u00a0"
       }
     },
     {
       "Max Position Limit": {
-        "Access": "RW",
+        "Access": "4,095",
         "Address": "48",
         "Data Name": "Max Position Limit",
-        "Initial": "4,095",
-        "Range": "0 ~ 4,095",
+        "Initial": "0 ~ 4,095",
+        "Range": "1 [pulse]",
         "Size(Byte)": "4",
-        "Unit": "1 [pulse]"
+        "Unit": "\u00a0"
       }
     },
     {
       "Min Position Limit": {
-        "Access": "RW",
+        "Access": "0",
         "Address": "52",
         "Data Name": "Min Position Limit",
-        "Initial": "0",
-        "Range": "0 ~ 4,095",
+        "Initial": "0 ~ 4,095",
+        "Range": "1 [pulse]",
         "Size(Byte)": "4",
-        "Unit": "1 [pulse]"
-      }
-    },
-    {
-      "External Port Mode 1": {
-        "Access": "RW",
-        "Address": "56",
-        "Data Name": "External Port Mode 1",
-        "Initial": "3",
-        "Range": "0 ~ 3",
-        "Size(Byte)": "1",
-        "Unit": "-"
-      }
-    },
-    {
-      "External Port Mode 2": {
-        "Access": "RW",
-        "Address": "57",
-        "Data Name": "External Port Mode 2",
-        "Initial": "3",
-        "Range": "0 ~ 3",
-        "Size(Byte)": "1",
-        "Unit": "-"
-      }
-    },
-    {
-      "External Port Mode 3": {
-        "Access": "RW",
-        "Address": "58",
-        "Data Name": "External Port Mode 3",
-        "Initial": "3",
-        "Range": "0 ~ 3",
-        "Size(Byte)": "1",
-        "Unit": "-"
+        "Unit": "\u00a0"
       }
     },
     {
       "Startup Configuration": {
-        "Access": "RW",
+        "Access": "0",
         "Address": "60",
         "Data Name": "Startup Configuration",
-        "Initial": "0",
-        "Range": "3",
+        "Initial": "0 ~ 3",
+        "Range": "-",
         "Size(Byte)": "1",
-        "Unit": "-"
+        "Unit": "\u00a0"
       }
     },
     {
       "Shutdown": {
-        "Access": "RW",
+        "Access": "52",
         "Address": "63",
         "Data Name": "Shutdown",
-        "Initial": "52",
+        "Initial": "-",
         "Range": "-",
         "Size(Byte)": "1",
-        "Unit": "-"
+        "Unit": "\u00a0"
       }
     }
   ],
@@ -282,17 +249,6 @@
         "Access": "RW",
         "Address": "64",
         "Data Name": "Torque Enable",
-        "Initial": "0",
-        "Range": "0 ~ 1",
-        "Size(Byte)": "1",
-        "Unit": "-"
-      }
-    },
-    {
-      "LED": {
-        "Access": "RW",
-        "Address": "65",
-        "Data Name": "LED",
         "Initial": "0",
         "Range": "0 ~ 1",
         "Size(Byte)": "1",
@@ -381,7 +337,7 @@
         "Access": "RW",
         "Address": "84",
         "Data Name": "Position P Gain",
-        "Initial": "800",
+        "Initial": "900",
         "Range": "0 ~ 16,383",
         "Size(Byte)": "2",
         "Unit": "-"
@@ -459,9 +415,9 @@
         "Address": "108",
         "Data Name": "Profile Acceleration",
         "Initial": "0",
-        "Range": "0 ~ 32,767 ",
+        "Range": "0 ~ 32,767",
         "Size(Byte)": "4",
-        "Unit": "214.577 [rev/min"
+        "Unit": "214.577 [rev/min2]"
       }
     },
     {
@@ -527,7 +483,7 @@
         "Initial": "-",
         "Range": "-",
         "Size(Byte)": "2",
-        "Unit": "-"
+        "Unit": "0.113 [%]"
       }
     },
     {
@@ -615,39 +571,6 @@
         "Initial": "-",
         "Range": "0 ~ 1",
         "Size(Byte)": "1",
-        "Unit": "-"
-      }
-    },
-    {
-      "External Port Data 1": {
-        "Access": "RW",
-        "Address": "152",
-        "Data Name": "External Port Data 1",
-        "Initial": "-",
-        "Range": "-",
-        "Size(Byte)": "2",
-        "Unit": "-"
-      }
-    },
-    {
-      "External Port Data 2": {
-        "Access": "RW",
-        "Address": "154",
-        "Data Name": "External Port Data 2",
-        "Initial": "-",
-        "Range": "-",
-        "Size(Byte)": "2",
-        "Unit": "-"
-      }
-    },
-    {
-      "External Port Data 3": {
-        "Access": "RW",
-        "Address": "156",
-        "Data Name": "External Port Data 3",
-        "Initial": "-",
-        "Range": "-",
-        "Size(Byte)": "2",
         "Unit": "-"
       }
     },

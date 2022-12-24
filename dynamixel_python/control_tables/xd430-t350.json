@@ -5,7 +5,7 @@
         "Access": "R",
         "Address": "0",
         "Data Name": "Model Number",
-        "Initial": "1,100",
+        "Initial": "1,001",
         "Range": "-",
         "Size(Byte)": "2",
         "Unit": "-"
@@ -181,8 +181,8 @@
         "Access": "RW",
         "Address": "38",
         "Data Name": "Current Limit",
-        "Initial": "2,047",
-        "Range": "0 ~ 2,047",
+        "Initial": "648",
+        "Range": "0 ~ 648",
         "Size(Byte)": "2",
         "Unit": "2.69 [mA]"
       }
@@ -192,8 +192,8 @@
         "Access": "RW",
         "Address": "44",
         "Data Name": "Velocity Limit",
-        "Initial": "167",
-        "Range": "0 ~ 1023",
+        "Initial": "130",
+        "Range": "0 ~ 1,023",
         "Size(Byte)": "4",
         "Unit": "0.229 [rev/min]"
       }
@@ -218,39 +218,6 @@
         "Range": "0 ~ 4,095",
         "Size(Byte)": "4",
         "Unit": "1 [pulse]"
-      }
-    },
-    {
-      "External Port Mode 1": {
-        "Access": "RW",
-        "Address": "56",
-        "Data Name": "External Port Mode 1",
-        "Initial": "3",
-        "Range": "0 ~ 3",
-        "Size(Byte)": "1",
-        "Unit": "-"
-      }
-    },
-    {
-      "External Port Mode 2": {
-        "Access": "RW",
-        "Address": "57",
-        "Data Name": "External Port Mode 2",
-        "Initial": "3",
-        "Range": "0 ~ 3",
-        "Size(Byte)": "1",
-        "Unit": "-"
-      }
-    },
-    {
-      "External Port Mode 3": {
-        "Access": "RW",
-        "Address": "58",
-        "Data Name": "External Port Mode 3",
-        "Initial": "3",
-        "Range": "0 ~ 3",
-        "Size(Byte)": "1",
-        "Unit": "-"
       }
     },
     {
@@ -381,7 +348,7 @@
         "Access": "RW",
         "Address": "84",
         "Data Name": "Position P Gain",
-        "Initial": "800",
+        "Initial": "900",
         "Range": "0 ~ 16,383",
         "Size(Byte)": "2",
         "Unit": "-"
@@ -615,39 +582,6 @@
         "Initial": "-",
         "Range": "0 ~ 1",
         "Size(Byte)": "1",
-        "Unit": "-"
-      }
-    },
-    {
-      "External Port Data 1": {
-        "Access": "RW",
-        "Address": "152",
-        "Data Name": "External Port Data 1",
-        "Initial": "-",
-        "Range": "-",
-        "Size(Byte)": "2",
-        "Unit": "-"
-      }
-    },
-    {
-      "External Port Data 2": {
-        "Access": "RW",
-        "Address": "154",
-        "Data Name": "External Port Data 2",
-        "Initial": "-",
-        "Range": "-",
-        "Size(Byte)": "2",
-        "Unit": "-"
-      }
-    },
-    {
-      "External Port Data 3": {
-        "Access": "RW",
-        "Address": "156",
-        "Data Name": "External Port Data 3",
-        "Initial": "-",
-        "Range": "-",
-        "Size(Byte)": "2",
         "Unit": "-"
       }
     },
