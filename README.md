@@ -19,6 +19,10 @@ The DynamixelManager class manages the usb port and maintains a dictionary of mo
 This is crucial for systems with multiple motors, but still simplifes initialization with
 a single motor.
 
+There are two optional arguments:
+- usb_port defaults to `/dev/ttyUSB0`
+- baud_rate defaults to 57600
+
 ### DynamixelMotor
 
 These are the objects in DynamixelManager's dictionary.
@@ -33,15 +37,68 @@ clone the repository, `cd` into `dynamixel_python`, and run `pip install .`.
 
 ### run first example
 
-Go to the examples `cd examples`, plug in your dynamixel (make sure spinning the motor won't damage anything), and run `python single_motor.py`.
+- Ensure you have a U2D2 plugged in and a dynamixel plugged in, powered, and set up so spinning the motor won't damage anything.
+- Open `examples/python single_motor.py` in a text editor.
+- Edit `USB_PORT` to match the usb port of your U2D2
+- Edit the `DYNAMIXEL_MODEL` at the top to match your motor and change the ID if you configured your motor's ID.
+- Run `python examples/python_single_motor.py`
 
 Your motor should sweep between position 0 and 1024 three times.
 
-open the file to see how the simplest way to use dynamixel_python to control one motor
+### Closer look at the code
+
+```
+    motors = DynamixelManager(USB_PORT)
+    testMotor = motors.add_dynamixel('TestMotor', ID, DYNAMIXEL_MODEL)
+    motors.init()
+```
+This instantiates a DynamixelManager object to communicate to the U2D2 on the configured usb port,
+then adds a motor to the U2D2 with the configured ID and model. Once the motors are added, 
+`motors.init()` intializes the communication with the U2D2.
+
+```
+    if not testMotor.ping():
+        raise BaseException('motor not configured correctly')
+```
+The ping method checks for communication with a dynamixel with the configured ID.
+
+```
+    testMotor.set_operating_mode(3)
+    testMotor.set_led(True)
+    testMotor.set_torque_enable(True)
+    testMotor.set_profile_velocity(262)
+```
+All of these commands come directly from the documented control table.
+
+`operating_mode` 3 is position mode, `led` True turns the light on, `torque_enable` True activates the motor, and `profile_velocity` sets the speed.
+
+For each of these, the `set_<control_table_name>(value)` pattern is used to write to the values.
+
+```
+    for i in range(3):
+        testMotor.set_goal_position(0)
+        time.sleep(0.5)
+
+        testMotor.set_goal_position(1024)
+        time.sleep(0.5)
+
+```
+The goal position works like any other control table value. This just alternates between position 0 and 1024 3 times, giving the motor 0.5 seconds to reach the position.
+
+The `multiple_motors.py` example demonstrates using `get_moving_status` to see when the motor
+has reached its target position.
+
+
+```
+    testMotor.set_torque_enable(False)
+    testMotor.set_led(False)
+```
+Finally, the script disables the motor and turns off the led.
+
 
 ### other examples
 
-The oter examples assume you have multiple motors, but also demonstrate some more capabilites of the package. They're worth checking out even if you only have one motor.
+The other examples assume you have multiple motors, but also demonstrate some more capabilites of the package. They're worth checking out even if you only have one motor.
 
 - multiple_motors incorporates DynamixelManager in a class and demonstrates some nice features for interacting with multiple motors at a time.
 - two_wheel_robot demonstrates velocity control

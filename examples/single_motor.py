@@ -1,6 +1,8 @@
 import time
 from dynamixel_python import DynamixelManager
 
+USB_PORT = '/dev/ttyUSB0'
+
 DYNAMIXEL_MODEL = 'xl330-m077'
 ID = 1
 
@@ -8,7 +10,7 @@ def single_motor_example():
     """
     turn on a single dynamixel and sweep it between position 0 and position 1024 three times
     """
-    motors = DynamixelManager()
+    motors = DynamixelManager(USB_PORT)
     testMotor = motors.add_dynamixel('TestMotor', ID, DYNAMIXEL_MODEL)
     motors.init()
 
